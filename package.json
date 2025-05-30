@@ -4,10 +4,10 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --root project",
-    "build": "vite build --root project",
+    "dev": "cd project && vite",
+    "build": "cd project && vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
+    "preview": "cd project && vite preview",
     "server": "node project/server/index.js",
     "dev:all": "concurrently \"npm run dev\" \"npm run server\""
   },
